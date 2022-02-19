@@ -7,17 +7,19 @@
   font-family: "Poppins", sans-serif;
 }
 header {
+  position: fixed;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: rgb(80, 72, 151);
+  background-color: rgba(80, 72, 151, 0.9);
   color: white;
   font-size: 20px;
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
   letter-spacing: 1px;
-  border-bottom: 5px solid rgba(10, 3, 20, 0.678);
+  border-bottom: 5px solid rgba(10, 3, 20, 0.2);
+  width: 100%;
 }
 header h2 {
   text-transform: uppercase;
@@ -105,6 +107,7 @@ header h2 {
   font-size: 30px;
   text-decoration: none;
   padding-right: 15px;
+  color: rgb(68, 43, 85);
 }
 
 #home .fa-brands.fa-github,
@@ -143,12 +146,12 @@ header h2 {
 
 .cards {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 .card {
   width: 30%;
-  height: 30em;
+  height: 20em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -164,11 +167,11 @@ header h2 {
 }
 .card figure {
   width: 100%;
-  height: 60%;
+  height: 80%;
 }
 figure img {
   width: 100%;
-  height: 70%;
+  height: 80%;
   margin-bottom: 10px;
 }
 figure figcaption {
@@ -195,4 +198,71 @@ figure figcaption {
   font-weight: bold;
   text-transform: capitalize;
   color: black;
+}
+
+#contact {
+  background-color: #453c462f;
+  width: 100%;
+  padding: 0 10%;
+}
+#contact h3 {
+  color: black;
+}
+
+.contactCards {
+  height: clac(fit-content + 20em);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.contactCard {
+  width: 20em;
+  height: 20em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em;
+  border: 0.011px solid gray;
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 10px;
+  margin: 2em 0;
+  background-color: #fff;
+}
+
+.contactCard i {
+  font-size: 5em;
+  text-align: center;
+  color: #3a293c;
+}
+
+.contactCard a {
+  font-size: 2em;
+  text-align: center;
+  color: #000;
+}
+
+footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 5px 10%;
+  background-color: rgb(80, 72, 151);
+  color: #fff;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+footer div a {
+  color: #fff;
+  padding: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
 }
