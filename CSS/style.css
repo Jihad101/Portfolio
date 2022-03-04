@@ -463,4 +463,25 @@ footer div a {
   text-decoration: none;
 }
 
+@media (max-width:500px){
+  footer p {
+    font-size: 13px;
+  }
+  
+  footer div a {
+
+    font-size: 13px;
+  }
+}
+
+@media (max-width:360px){
+  footer p {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  footer div a {
+    font-size: 12px;
+  }
+}
 /* End Footer */
